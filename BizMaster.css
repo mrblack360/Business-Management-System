@@ -1,0 +1,124 @@
+body{
+    background: linear-gradient(90deg, snow, lightseagreen, darkorange);
+}
+div.juu{
+    width: 100%;
+    height: 100px;
+    font-size: xx-large;
+    font-stretch: expanded;
+    font-family: "Goudy Old Style";
+    background: linear-gradient(20deg, cornflowerblue, snow);
+    text-align: center;
+}
+.kushoto{
+    width: 20%;
+    height: 560px;
+    box-shadow: 3px 4px 2px;
+    float: left;
+    background: linear-gradient(20deg, cornflowerblue, snow);
+}
+.vyandani{
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(5deg, cornflowerblue, snow);
+    font-family: "Goudy Old Style";
+    font-size: 30px;
+    text-align: left;
+}
+.main{
+    background: linear-gradient(30deg, green, snow);
+    float: right;
+    font-family: "Goudy Old Style";
+    width: 79%;
+    height: 560px;
+    font-size: large;
+    overflow-y: scroll;
+}
+.nafasi{
+    height: 150px;
+    background: none;
+}
+.footer{
+    background: linear-gradient(20deg, cornflowerblue, snow);
+    height: 10%;
+    text-align: center;
+    font-family: "Goudy Old Style";
+    font-size: large;
+}
+.label{
+        width: 150px;
+}
+.mainpods{
+    height: 100px;
+    width: 200px;
+    background: radial-gradient(circle, snow, orangered);
+    border-radius: 0px 15px 0px 30px;
+    text-align: center;
+    object-position: center;
+    padding-top: 4px;
+    box-shadow: 2px 2px 2px;
+    margin-left: 15px;
+    margin-top: 15px;
+    float: left;
+
+}
+.mainpods::hover .mainspans{
+    color: white;
+}
+span.userdetails{
+    background: linear-gradient(30deg, green, snow);
+}
+.mainspans{
+    font-size: xx-large;
+    font-style: oblique;
+    color: green;
+}
+.error{
+    color: red;
+}
+input{
+    font-family: "Goudy Old Style";
+    font-style: oblique;
+    width: 200px;
+}
+.idadi{
+    width: inherit;
+}
+.login {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(5deg, cornflowerblue, snow);
+    alignment: bottom;
+    font-size: large;
+}
+.logout{
+    background: linear-gradient(30deg, green, snow);
+    width: 100%;
+    font-size: large;
+    float: bottom;
+}
+.matumizi{
+    background: inherit;
+    width: 100%;
+}
+a{
+    color: inherit;
+    text-underline: none;
+    text-decoration: none;
+}
+
+
+table{
+    width: 100%;
+    text-align: left;
+
+}
+tr{
+    border: 1px white;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
