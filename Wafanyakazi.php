@@ -6,6 +6,7 @@
  * Time: 22:59
  */
 include 'config.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@ include 'config.php';
 <head>
     <meta charset="UTF-8">
     <title>Wafanyakazi-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaster.css">
+    <link rel="stylesheet" type="text/css" href="BizMaster.csS">
     <script src="Mauzo.js" type="text/javascript"></script>
     <script src="UserHome.js" type="text/javascript"></script>
 </head>
@@ -72,18 +73,12 @@ include 'config.php';
             ?>
 
         </table>
-        <hr>
-        <h3>Ongeza Mfanyakazi Mpya</h3>
-        <center>
-            <form method="POST" action="insert.php">
-                <div class="label">Ingiza Jina La Mfanyakazi:</div>
-                <input name="jina" placeholder="Ingiza Jina la Mfanyakazi" required><br>
-                <div class="label">Ingiza Neno la siri la Mfanyakazi:</div>
-                <input type="password" name="password" placeholder="Ingiza Neno la siri la Mfanyakazi" required><br><br>
-                <input type="submit" name="submit" class="login" value="Ongeza Mfanyakazi">
-            </form>
-        </center>
     </form>
+        <hr>
+    <a href="insert.php">
+        <input type="submit" name="submit" class="login" value="Ongeza Mfanyakazi">
+    </a>
+    <hr>
 </div>
 <div class="footer">
     &copy;2019. All Rights Reserved.
