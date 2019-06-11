@@ -49,7 +49,7 @@ include 'config.php';
         Mauzo
     </h2>
     <hr>
-    <form name="mauzo">
+    <form name="mauzo" method="GET">
         <table>
             <tr>
                 <th style="width: 5%">S/No</th>
