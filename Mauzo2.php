@@ -45,6 +45,10 @@ include 'config.php';
     </a>
 </div>
 <div class="main">
+    <form style="float: right!important;">
+        <input type="search" placeholder="tafuta mauzo" style="width: 115px">
+        <input type="button" value="Tafuta" style="width: fit-content">
+    </form>
     <h2>
         Mauzo
     </h2>
