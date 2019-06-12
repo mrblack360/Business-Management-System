@@ -19,7 +19,7 @@ include 'config.php';
     <script src="UserHome.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="juu" onclick="coming()">
+<div class="juu">
     Intergrated Business Management System
 </div>                                                        <!--Part ya juu kabisa-->
 <div class="kushoto">
@@ -46,6 +46,10 @@ include 'config.php';
     </a>
 </div>
 <div class="main">
+    <form style="float: right!important;">
+        <input type="search" placeholder="tafuta mfanyakazi" style="width: 115px">
+        <input type="button" value="Tafuta" style="width: fit-content">
+    </form>
     <h2>
         Wafanyakazi
     </h2>
