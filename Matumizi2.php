@@ -5,7 +5,12 @@
  * Date: 26-May-19
  * Time: 13:13
  */
+session_start();
 include 'config.php';
+
+if (!isset($_SESSION['login_user'])) {
+    header("location:Login.html");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +46,7 @@ include 'config.php';
         Msaada
     </div>
     <div class="nafasi"></div>
-    <a href="Login.html">
+    <a href="Logout.php">
         <input type="submit" class="logout" value="Toka"/>
     </a>
 </div>                                                          <!--Sidebar ya kushoto-->
