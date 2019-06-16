@@ -5,10 +5,10 @@
  * Date: 22-May-19
  * Time: 22:59
  */
+session_start();
+
 include 'config.php';
 
-
-session_start();
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
 
     $myusername=mysqli_real_escape_string($db, $_POST['jina']);
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
         //session_register("myusername");
         $_SESSION['login_user'] = $myusername;
 
-        header("location:Home.html");
+        header("location:Home.php");
 
     }
 }
