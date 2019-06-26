@@ -5,14 +5,19 @@
  * Date: 26-May-19
  * Time: 19:57
  */
+session_start();
 include 'config.php';
+
+if (!isset($_SESSION['login_user'])){
+    header("location:Login.html");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaster.css">
+    <link rel="stylesheet" type="text/css" href="BizMaste.css">
     <script src="UserHome.js" language="JavaScript"></script>
 </head>
 <body>
@@ -39,11 +44,11 @@ include 'config.php';
             Wafanyakazi
         </div>
     </a>
-    <div class="vyandani" onclick="coming()">
-        Msaada
-    </div>
+    <a href="Msaada2.html">
+        <div class="vyandani" class="vyandani">Msaada</div>
+    </a>
     <div class="nafasi"></div>
-    <a href="Login.html">
+    <a href="Logout.php">
         <input type="submit" class="logout" value="Toka"/>
     </a>
 </div>                                                          <!--Sidebar ya kushoto-->
