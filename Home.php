@@ -17,7 +17,7 @@ if (!isset($_SESSION['login_user'])){
 <head>
     <meta charset="UTF-8">
     <title>Home-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaster.css">
+    <link rel="stylesheet" type="text/css" href="BizMaste.css">
     <script src="UserHome.js" language="JavaScript"></script>
 </head>
 <body>
@@ -34,9 +34,9 @@ if (!isset($_SESSION['login_user'])){
         Matumizi
         </div>
     </a>
-    <div class="vyandani" onclick="coming()">
-        Msaada
-    </div>
+    <a href="Msaada2.html">
+        <div class="vyandani" class="vyandani">Msaada</div>
+    </a>
     <div class="nafasi"></div>
     <a href="Logout.php">
         <input type="submit" class="logout" value="Toka"/>
