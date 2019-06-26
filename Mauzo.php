@@ -5,7 +5,12 @@
  * Date: 22-May-19
  * Time: 22:59
  */
+session_start();
 include 'config.php';
+
+if (!isset($_SESSION['login_user'])) {
+    header("location:Login.html");
+}
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +18,7 @@ include 'config.php';
 <head>
     <meta charset="UTF-8">
     <title>Mauzo-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaster.css">
+    <link rel="stylesheet" type="text/css" href="BizMaste.css">
     <script src="Mauzo.js" type="text/javascript"></script>
     <script src="UserHome.js" type="text/javascript"></script>
 </head>
@@ -22,52 +27,60 @@ include 'config.php';
     Intergrated Business Management System
 </div>                                                        <!--Part ya juu kabisa-->
 <div class="kushoto">
-    <a href="Home.html">
+    <a href="Home.php">
         <div class="vyandani">Nyumbani</div>
     </a>
     <a href="Matumizi.php">
         <div class="vyandani">Matumizi</div>
     </a>
-    <div class="vyandani" onclick="coming()">Msaada</div>
+    <a href="Msaada2.html">
+        <div class="vyandani" class="vyandani">Msaada</div>
+    </a>
     <div class="nafasi"></div>
-    <a href="Login.html">
+    <a href="Logout.php">
         <input type="submit" class="logout" value="Toka"/>
     </a>
 </div>
 <div class="main">
+    </form>
     <h2>
-        Mauzo
+        Mauzo Ya Leo
     </h2>
     <hr>
     <form name="mauzo" method="GET">
-    <table>
-        <tr>
-            <th style="width: 5%">S/No</th>
-            <th style="width: 50%">Particulars</th>
-            <th style="width: 20%">Idadi</th>
-            <th style="width: 25%">Bei (Tshs)</th>
-        </tr>
-        <?php
-        $sql="SELECT * FROM stock";
+        <table>
+            <tr>
+                <th style="width: 5%">S/No</th>
+                <th style="width: 50%">Bidhaa</th>
+                <th style="width: 20%">Idadi</th>
+                <th style="width: 25%">Bei (Tshs)</th>
+            </tr>
+            <?php
+            $sql="SELECT * FROM stock";
+            $bei=0;
+            $sno=1;
 
-        $sno=1;
+            $data=mysqli_query($db, $sql);
+            while($zenyewe=mysqli_fetch_array($data, MYSQLI_ASSOC)){
+                echo "<tr>";
+                echo "<td>{$sno}</td>";$sno++;
+                echo "<td>{$zenyewe['particulars']}</td>";
+                echo "<td>{$zenyewe['qty']}</td>";
+                $bei=$zenyewe['qty']*$zenyewe['price'];
+                echo "<td>{$bei}</td>";
+                echo "</tr>";
 
-        $data=mysqli_query($db, $sql);
-        while($zenyewe=mysqli_fetch_array($data, MYSQLI_ASSOC)){
-            echo "<tr>";
-            echo "<td>{$sno}</td>";$sno++;
-            echo "<td>{$zenyewe['particulars']}</td>";
-            echo "<td><input name='idadi' type='number' value='1'></td>";
-            if (isset($_GET['idadi'])){
-            $idadi=($zenyewe['price'] * $_GET['idadi']);
-            echo "<td>$idadi</td>";
+                if (isset($_GET['idadi'])){
+                    $idadi=($zenyewe['price'] * $_GET['idadi']);
+                    echo "<td>$idadi</td>";
+                }
+
             }
-            echo "</tr>";
-        }
-        ?>
+            echo "<tr>"
+            ?>
 
-    </table>
-        <button style="margin-left: 670px">Jumla</button>
+        </table>
+
     </form>
 </div>
 <div class="footer">
