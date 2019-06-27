@@ -1,35 +1,36 @@
 body{
-    background: linear-gradient(90deg, snow, lightseagreen, darkorange);
+    background-color: #880000;
 }
 div.juu{
     width: 100%;
-    height: 100px;
-    font-size: xx-large;
+    height: 100px;                      
+    font-size: 50px;
     font-stretch: expanded;
     font-family: "Goudy Old Style";
-    background: linear-gradient(20deg, cornflowerblue, snow);
+    background: linear-gradient(90deg, beige, maroon);
     text-align: center;
+    padding-top: 25px;
+    vertical-align: text-bottom;
 }
 .kushoto{
     width: 20%;
     height: 560px;
-    box-shadow: 3px 4px 2px;
     float: left;
-    background: linear-gradient(20deg, cornflowerblue, snow);
+    background-color: maroon;
 }
 .vyandani{
     width: 100%;
     height: max-content;
-    background: linear-gradient(5deg, cornflowerblue, snow);
+    background: linear-gradient(5deg, beige, beige, maroon);
     font-family: "Goudy Old Style";
     font-size: 30px;
     text-align: left;
 }
 .main{
-    background: linear-gradient(30deg, green, snow);
+    background: linear-gradient( 90deg, maroon, beige);
     float: right;
     font-family: "Goudy Old Style";
-    width: 79%;
+    width: 79.5%;
     height: 560px;
     font-size: large;
     overflow-y: scroll;
@@ -39,7 +40,7 @@ div.juu{
     background: none;
 }
 .footer{
-    background: linear-gradient(20deg, cornflowerblue, snow);
+    background-color: beige;
     height: 10%;
     text-align: center;
     font-family: "Goudy Old Style";
@@ -62,8 +63,8 @@ div.juu{
     float: left;
 
 }
-.mainpods::hover .mainspans{
-    color: white;
+.mainpods:hover .mainspans{
+    color: green;
 }
 span.userdetails{
     background: linear-gradient(30deg, green, snow);
@@ -87,12 +88,12 @@ input{
 .login {
     width: 100%;
     height: 30px;
-    background: linear-gradient(5deg, cornflowerblue, snow);
+    background: linear-gradient(90deg, beige, beige, maroon);
     alignment: bottom;
     font-size: large;
 }
 .logout{
-    background: linear-gradient(30deg, green, snow);
+    background: linear-gradient(90deg, beige, beige, maroon);
     width: 100%;
     font-size: large;
     float: bottom;
@@ -106,12 +107,9 @@ a{
     text-underline: none;
     text-decoration: none;
 }
-
-
 table{
     width: 100%;
     text-align: left;
-
 }
 tr{
     border: 1px white;
@@ -121,4 +119,11 @@ h2{
 }
 h3{
     text-align: center;
+}
+button.bob{
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(5deg, cornflowerblue, snow);
+    alignment: bottom;
+    font-size: large;
 }
