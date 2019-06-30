@@ -11,13 +11,18 @@ include 'config.php';
 if (!isset($_SESSION['login_user'])){
     header("location:Login.html");
 }
+else {
+    $jina=$_SESSION['login_user'];
+    $time=$_SESSION['time'];
+    echo "<span style='color: white; font-size: larger'>Logged in as  $jina On $time ".date("d, m Y")."</span>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaste.css">
+    <link rel="stylesheet" type="text/css" href="BizMaster.css">
     <script src="UserHome.js" language="JavaScript"></script>
 </head>
 <body>
@@ -34,7 +39,7 @@ if (!isset($_SESSION['login_user'])){
             Matumizi
         </div>
     </a>
-    <a href="">
+    <a href="Stock.php">
         <div class="vyandani">
             Stock
         </div>
@@ -45,7 +50,7 @@ if (!isset($_SESSION['login_user'])){
         </div>
     </a>
     <a href="Msaada2.html">
-        <div class="vyandani" class="vyandani">Msaada</div>
+        <div class="vyandani" >Msaada</div>
     </a>
     <div class="nafasi"></div>
     <a href="Logout.php">
