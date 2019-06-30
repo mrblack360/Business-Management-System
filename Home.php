@@ -17,7 +17,7 @@ if (!isset($_SESSION['login_user'])){
 <head>
     <meta charset="UTF-8">
     <title>Home-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaste.css">
+    <link rel="stylesheet" type="text/css" href="BizMaster.css">
     <script src="UserHome.js" language="JavaScript"></script>
 </head>
 <body>
