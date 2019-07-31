@@ -7,30 +7,6 @@
  */
 
 include 'config.php';
-
-
-if(isset($_POST["submit"])){
-    $client = $_POST["jina"];
-    $pword = $_POST["password"];
-
-
-    $db1 = "select username  from clients where username = '$client'";
-    $result1 = mysqli_query($db, $db1);
-    $row = mysqli_num_rows($result1);
-
-    if($row > 0){
-        echo "Mfanyakazi amesajiriwa tayari!";
-    }else{
-        $db2 = "INSERT INTO clients(username, password) values('$client', '$pword')";
-        $result = mysqli_query($db, $db2);
-        if($result){
-            header("location:Wafanyakazi.php");
-        }else{
-            echo "error : ".mysqli_error($db);
-        }
-    }
-
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,19 +33,25 @@ if(isset($_POST["submit"])){
     <a href="Matumizi2.php">
         <div class="vyandani">Matumizi</div>
     </a>
-    <a href="">
+    <a href="Stock.php">
         <div class="vyandani">
             Stock
         </div>
     </a>
-    <div class="vyandani" onclick="coming()">Msaada</div>
+    <a href="Msaada2.html">
+        <div class="vyandani" class="vyandani">Msaada</div>
+    </a>
     <div class="nafasi"></div>
-    <a href="Login.html">
+    <a href="Logout.php">
         <input type="submit" class="logout" value="Toka"/>
     </a>
 </div>
 <div class="main">
-    </form>
+    <h2>
+        Wafanyakazi
+    </h2>
+    <hr>
+    <h3>Ongeza Mfanyakazi</h3>
     <hr>
     <center>
         <form method="POST" action="insert.php">
@@ -79,6 +61,30 @@ if(isset($_POST["submit"])){
             <input type="password" name="password" placeholder="Ingiza Neno la siri la Mfanyakazi" required><br><br>
             <input type="submit" name="submit" class="login" value="Ongeza Mfanyakazi">
         </form>
+        <?php
+        if(isset($_POST["submit"])){
+            $client = $_POST["jina"];
+            $pword = $_POST["password"];
+            //$Hashed=password_hash($pword, PASSWORD_DEFAULT);
+
+
+            $db1 = "select username  from clients where username = '$client'";
+            $result1 = mysqli_query($db, $db1);
+            $row = mysqli_num_rows($result1);
+
+            if($row > 0){
+                echo "Mfanyakazi amesajiriwa tayari!";
+            }else{
+                $db2 = "INSERT INTO clients(username, password) values('$client', '$pword')";
+                $result = mysqli_query($db, $db2);
+                if($result){
+                    header("location:Wafanyakazi.php");
+                }else{
+                    echo "error : ".mysqli_error($db);
+                }
+            }
+        }
+        ?>
     </center>
 </div>
 <div class="footer">
