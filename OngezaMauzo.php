@@ -14,7 +14,7 @@ include 'config.php';
 <head>
     <meta charset="UTF-8">
     <title>Mauzo-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaste.csS">
+    <link rel="stylesheet" type="text/css" href="BizMaster.csS">
     <style type="text/css">
         select{
             width: 50%;
