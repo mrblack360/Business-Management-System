@@ -18,7 +18,7 @@ if (!isset($_SESSION['login_user'])) {
 <head>
     <meta charset="UTF-8">
     <title>Mauzo-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaste.css">
+    <link rel="stylesheet" type="text/css" href="BizMaster.css">
     <script src="Mauzo.js" type="text/javascript"></script>
     <script src="UserHome.js" type="text/javascript"></script>
 </head>
@@ -33,7 +33,7 @@ if (!isset($_SESSION['login_user'])) {
     <a href="Matumizi2.php">
         <div class="vyandani">Matumizi</div>
     </a>
-    <a href="">
+    <a href="Stock.php">
         <div class="vyandani">
             Stock
         </div>
@@ -83,10 +83,6 @@ if (!isset($_SESSION['login_user'])) {
                 echo "<td>{$bei}</td>";
                 echo "</tr>";
 
-                if (isset($_GET['idadi'])){
-                    $idadi=($zenyewe['price'] * $_GET['idadi']);
-                    echo "<td>$idadi</td>";
-                }
 
             }
             ?>
