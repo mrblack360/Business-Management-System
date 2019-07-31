@@ -32,9 +32,9 @@ if (!isset($_SESSION['login_user'])) {
     <a href="Mauzo.php">
         <div class="vyandani">Mauzo</div>
     </a>
-    <div class="vyandani" onclick="coming()">
-        Msaada
-    </div>
+    <a href="Msaada2.html">
+        <div class="vyandani" class="vyandani">Msaada</div>
+    </a>
     <div class="nafasi"></div>
     <a href="Logout.php">
         <input type="submit" class="logout" value="Toka"/>
@@ -49,34 +49,27 @@ if (!isset($_SESSION['login_user'])) {
     <table>
         <tr>
             <th style="width: 5%">S/No</th>
-            <th style="width: 60%">Particulars</th>
+            <th style="width: 60%">Matumizi</th>
             <th style="width: 35%">Bei (Tshs)</th>
         </tr>
         <tr>
             <td>01</td>
-            <td><input class="matumizi"></td>
-            <td><input type="number" class="matumizi"></td>
+            <td>
+                <select style="width: 100%; font-size: 20px; font-family: 'Goudy Old Style'">
+                    <option>Chagua Matumizi</option>
+                    <option>Chakula</option>
+                    <option>Usafiri</option>
+                    <option>Umeme</option>
+                    <option>Mengineyo (andika hapa chini)</option>
+                </select>
+            </td>
+            <td rowspan="2"><input type="number" class="matumizi" style="height: 40px;"></td>
         </tr>
         <tr>
             <td>02</td>
-            <td><input class="matumizi"></td>
-            <td><input type="number" class="matumizi"></td>
+            <td><input class="matumizi" type="text"  placeholder="Mengineyo (Andika hapa)" style="color: revert; font-size: 20px;background-color: white"></td>
         </tr>
-        <tr>
-            <td>03</td>
-            <td><input class="matumizi"></td>
-            <td><input type="number" class="matumizi"></td>
-        </tr>
-        <tr>
-            <td>04</td>
-            <td><input class="matumizi"></td>
-            <td><input type="number" class="matumizi"></td>
-        </tr>
-        <tr>
-            <td>05</td>
-            <td><input class="matumizi"></td>
-            <td><input type="number" class="matumizi"></td>
-        </tr>
+
     </table>
     <br>
     <input type="submit" class="login" value="Ongeza Matumizi">
