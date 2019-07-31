@@ -38,12 +38,14 @@ if (!isset($_SESSION['login_user'])) {
     <a href="Matumizi2.php">
         <div class="vyandani">Matumizi</div>
     </a>
-    <a href="">
+    <a href="Stock.php">
         <div class="vyandani">
             Stock
         </div>
     </a>
-    <div class="vyandani" onclick="coming()">Msaada</div>
+    <a href="Msaada2.html">
+        <div class="vyandani" class="vyandani">Msaada</div>
+    </a>
     <div class="nafasi"></div>
     <a href="Logout.php">
         <input type="submit" class="logout" value="Toka"/>
@@ -64,10 +66,12 @@ if (!isset($_SESSION['login_user'])) {
             </tr>
             <?php
             if ($_SERVER["REQUEST_METHOD"]=="GET") {
+                //$jina=$_SESSION['jina'];
+                $jina=$_GET['client'];
 
-                $client = mysqli_real_escape_string($db, $_POST['jina']);
+                $client = mysqli_real_escape_string($db, $jina);
 
-                $sql = "SELECT * FROM clients WHERE username=$client";
+                $sql = "SELECT * FROM clients WHERE username='$client'";
 
                 $sno = 1;
 
