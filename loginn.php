@@ -9,6 +9,7 @@ session_start();
 
 include 'config.php';
 
+$_SESSION['time']=0;
 if ($_SERVER["REQUEST_METHOD"]=="POST"){
 
     $myusername=mysqli_real_escape_string($db, $_POST['jina']);
@@ -24,6 +25,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
     if ($count==1){
         
         $_SESSION['login_user']=$myusername;
+        $_SESSION['time']=date("l");
 
         header("location:Home2.php");
 
