@@ -5,8 +5,14 @@
  * Date: 22-May-19
  * Time: 22:59
  */
+session_start();
 include 'config.php';
 
+$_SESSION['jina']=0;
+
+if (!isset($_SESSION['login_user'])) {
+    header("location:Login.html");
+}
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +20,7 @@ include 'config.php';
 <head>
     <meta charset="UTF-8">
     <title>Wafanyakazi-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaster.csS">
+    <link rel="stylesheet" type="text/css" href="BizMaster.css">
     <script src="Mauzo.js" type="text/javascript"></script>
     <script src="UserHome.js" type="text/javascript"></script>
 </head>
@@ -34,22 +40,29 @@ include 'config.php';
     <a href="Matumizi2.php">
         <div class="vyandani">Matumizi</div>
     </a>
-    <a href="">
+    <a href="Stock.php">
         <div class="vyandani">
             Stock
         </div>
     </a>
-    <div class="vyandani" onclick="coming()">Msaada</div>
+    <a href="Msaada2.html">
+        <div class="vyandani" class="vyandani">Msaada</div>
+    </a>
     <div class="nafasi"></div>
-    <a href="Login.html">
+    <a href="Logout.php">
         <input type="submit" class="logout" value="Toka"/>
     </a>
 </div>
 <div class="main">
-    <form style="float: right!important;">
-        <input type="search" placeholder="tafuta mfanyakazi" style="width: 115px">
-        <input type="button" value="Tafuta" style="width: fit-content">
+    <form style="float: right!important;" method="get" action="TafutaWafanyakazi.php">
+        <input type="search" placeholder="tafuta mfanyakazi" style="width: 115px" name="client">
+        <input type="submit" value="Tafuta" style="width: fit-content" name="tafuta">
     </form>
+    <?php
+//        if (isset($_GET['tafuta'])){
+//            $_SESSION['jina']=$_GET['client'];
+//        }
+    ?>
     <h2>
         Wafanyakazi
     </h2>
