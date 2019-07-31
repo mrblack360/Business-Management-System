@@ -44,40 +44,40 @@ if (!isset($_SESSION['login_user'])){
 </div>                                                          <!--Sidebar ya kushoto-->
 <div class="main" id="main">
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,500/=</span>
     </div>
     <div class="mainpods">
-        Jumla ya matumizi ya leo yamefikia <span class="mainspans">Tshs 31,789/=</span>
+        Jumla ya matumizi ya leo yamefikia <span class="mainspans">Tshs 31,200/=</span>
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+        Jumla ya mauzo ya Jana Ilikuwa <span class="mainspans">Tshs 1,234,000/=</span>
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+        Jumla ya matumizi ya Jana ilikuwa <span class="mainspans">Tshs 62,700/=</span>
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+
     </div>
     <div class="mainpods">
-        Jumla ya mauzo ya leo yamefikia <span class="mainspans">Tshs 171,789/=</span>
+
     </div>
 </div>                                                                    <!--main body part-->
 <div class="footer">
