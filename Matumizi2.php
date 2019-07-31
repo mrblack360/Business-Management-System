@@ -32,7 +32,7 @@ if (!isset($_SESSION['login_user'])) {
     <a href="Mauzo2.php">
         <div class="vyandani">Mauzo</div>
     </a>
-    <a href="">
+    <a href="Stock.php">
         <div class="vyandani">
             Stock
         </div>
@@ -42,9 +42,9 @@ if (!isset($_SESSION['login_user'])) {
             Wafanyakazi
         </div>
     </a>
-    <div class="vyandani" onclick="coming()">
-        Msaada
-    </div>
+    <a href="Msaada2.html">
+        <div class="vyandani" class="vyandani">Msaada</div>
+    </a>
     <div class="nafasi"></div>
     <a href="Logout.php">
         <input type="submit" class="logout" value="Toka"/>
