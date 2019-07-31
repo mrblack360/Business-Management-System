@@ -18,7 +18,7 @@ if (!isset($_SESSION['login_user'])) {
 <head>
     <meta charset="UTF-8">
     <title>Mauzo-BizMaster</title>
-    <link rel="stylesheet" type="text/css" href="BizMaste.css">
+    <link rel="stylesheet" type="text/css" href="BizMaster.css">
     <script src="Mauzo.js" type="text/javascript"></script>
     <script src="UserHome.js" type="text/javascript"></script>
 </head>
@@ -82,6 +82,9 @@ if (!isset($_SESSION['login_user'])) {
         </table>
 
     </form>
+    <a href="OngezaMauzo.php">
+        <input type="submit" name="submit" class="login" value="Ongeza Mauzo">
+    </a>
 </div>
 <div class="footer">
     &copy;2019. All Rights Reserved.
