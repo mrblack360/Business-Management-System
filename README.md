@@ -2,7 +2,8 @@
 
 Welcome!
 
-[BMS] is a very interesting system for managing business among other intrepreneurial activities using your mobile device.
+# Introduction
+[BMS](https://github.com/mrblack360/Business-Management-System) is a very interesting system for managing business among other intrepreneurial activities using your mobile device. The system is brought to effect and developed by [Mawi, BK](mailto:barakamawi@gmail.com), [Mjema, CJ](mailto:johnchristina23@gmail.com) and [Maswi, MR](mailto:raphaelraphaelmm@gmail.com).
 
 # Requirements
 The following items are very crucial for the application to run softly in your machine;-
@@ -18,6 +19,6 @@ Just clone the repository by running:
 and run it softly.
 
 # Further Help
-For any further help or concern, let's know through our [email](mailto:rmaswi360@outlook.com)
+For any further help or concern, don't hesitate to let's know through our [email](mailto:rmaswi360@outlook.com).
 
 Regards!
